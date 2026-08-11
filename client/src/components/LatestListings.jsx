@@ -2,7 +2,7 @@ import React from 'react'
 import Title from './Title'
 import { useSelector } from 'react-redux'
 import ListingCard from './ListingCard'
-import Plans from "../components/Plans"
+
 
 const LatestListings = () => {
 
