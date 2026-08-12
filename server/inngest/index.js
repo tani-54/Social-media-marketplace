@@ -66,8 +66,8 @@ const syncUserDeletion = inngest.createFunction(
       chats.length === 0 &&
       transactions.length === 0
     ) {
-      await prisma.user.delete({
-        where: { id: data.id },
+      await prisma.user.deleteMany({
+      where: { id: data.id },
       });
     } else {
       await prisma.listing.updateMany({
